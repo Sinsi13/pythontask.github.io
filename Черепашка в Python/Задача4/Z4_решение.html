@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Задачка 1</title>
+</head>
+<body bgcolor="#66FFFF">
+<div style="text-align: center;">
+  <p><br>import turtle as t #подключаем модуль "черепаха"
+<br>t.tracer(0) #отключение анимации черепахи
+<br>t.left(90) #поворачивает черепаху на 90 градусов влево
+<br>t.screensize(10000, 10000) #масштаб
+<br>k = 30 #коэффициент увеличения
+<br>#построение фигуры
+<br>for i in range(4):
+    <br>t.forward(10*k)
+    <br>t.right(60)
+    <br>t.forward(10*k)
+    <br>t.right(120)
+<br>#поднимаем перо чтобы не рисовать линии
+<br>t.up()
+<br>#алгоритм построения точек
+<br>for x in range(-5, 20):
+    <br>for y in range(0, 20):
+        <br>t.goto(x*k, y*k)
+        <br>t.dot(4, "red") #рисует точки размером 5 красного цвета
+<br>t.update() #обновляет экран при использовании команды tracer
+<br>t.done() #завершение программы
+    
+
+</p>
+</div>
+</html>
